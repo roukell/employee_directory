@@ -13,16 +13,17 @@ const App = () => {
 
   // search employee and return search results
   const searchedEmployees = employees.filter(result => {
-    const sortBylastName = result.lastName.toLowerCase().includes(searchTerm.toLowerCase());
-    const sortByfirstName = result.firstName.toLowerCase().includes(searchTerm.toLowerCase());
-    const sortByTitle = result.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const sortByPhone = result.phone.toLowerCase().includes(searchTerm.toLowerCase());
-    const sortByEmail = result.email.toLowerCase().includes(searchTerm.toLowerCase());
-    return sortBylastName || sortByfirstName || sortByTitle || sortByPhone || sortByEmail;
+    const searchBylastName = result.lastName.toLowerCase().includes(searchTerm.toLowerCase());
+    const searchByfirstName = result.firstName.toLowerCase().includes(searchTerm.toLowerCase());
+    const searchByTitle = result.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const searchByPhone = result.phone.toLowerCase().includes(searchTerm.toLowerCase());
+    const searchByEmail = result.email.toLowerCase().includes(searchTerm.toLowerCase());
+    return searchBylastName || searchByfirstName || searchByTitle || searchByPhone || searchByEmail;
   })
 
-  const handleSort = (e) => {
-    console.log(e)
+  // sorts table by request
+  const handleSort = (request) => {
+    console.log(request)
   }
 
   return (
