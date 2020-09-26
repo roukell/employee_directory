@@ -22,8 +22,32 @@ const App = () => {
   })
 
   // sorts table by request
-  const handleSort = (request) => {
-    console.log(request)
+  const handleSort = request => {
+    if (request === 'firstName') {
+      employees.sort((a, b) => (a.firstName > b.firstName) ? 1 : -1)
+      // sorted employees by ascending firstName
+      return employees
+    } 
+
+    else if (request === 'lastName') {
+      employees.sort((a, b) => (a.lastName > b.lastName) ? 1 : -1)
+      return employees
+    } 
+
+    else if (request === 'email') {
+      employees.sort((a, b) => (a.email > b.email) ? 1 : -1)
+      return employees
+    } 
+
+    else if (request === 'phone') {
+      employees.sort((a, b) => (a.phone > b.phone) ? 1 : -1)
+      return employees
+    } 
+    
+    else {
+      employees.sort((a, b) => (a.id > b.id) ? 1 : -1)
+      return employees
+    } 
   }
 
   return (

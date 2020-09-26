@@ -7,6 +7,7 @@ const EmployeesTable = (props) => {
     <Table striped bordered hover>
       <thead>
         <tr>
+          <th><Button onClick={() => props.click('id')}>ID</Button></th>
           <th>Image</th>
           <th>Title</th>
           <th><Button onClick={() => props.click('firstName')}>First Name</Button></th>
@@ -19,6 +20,7 @@ const EmployeesTable = (props) => {
         {props.employees.map(employee => {
           return (
             <tr key={employee.id}>
+              <td>{employee.id}</td>
               <td><img src={employee.picture} alt="employee_picture"></img></td>
               <td>{employee.title}</td>
               <td>{employee.firstName}</td>
