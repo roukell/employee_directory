@@ -16,7 +16,7 @@ const employees = [
       lastName: 'Blue',
       title: 'Mr',
       phone: '0412 345 678',
-      email: 'Squirtle@gmail.com',
+      email: 'squirtle@gmail.com',
     },
     {
       id: 8,
@@ -25,7 +25,7 @@ const employees = [
       lastName: 'Blue',
       title: 'Ms',
       phone: '0412 343 688',
-      email: 'Warwar@gmail.com',
+      email: 'warwar@gmail.com',
     },
     {
       id: 10,
@@ -34,7 +34,7 @@ const employees = [
       lastName: 'Green',
       title: 'Miss',
       phone: '0488 775 008',
-      email: 'Cater10@gmail.com',
+      email: 'cater10@gmail.com',
     },
     {
       id: 12,
@@ -52,7 +52,34 @@ const employees = [
       lastName: 'Pink',
       title: 'Miss',
       phone: '0412 234 777',
-      email: 'Jiggly39@gmail.com',
+      email: 'jiggly39@gmail.com',
+    },
+    {
+      id: 25,
+      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png',
+      firstName: 'Pikachu',
+      lastName: 'Yellow',
+      title: 'Mr',
+      phone: '0412 000 557',
+      email: 'chuchu25@gmail.com',
+    },
+    {
+      id: 69,
+      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/069.png',
+      firstName: 'Bellsprout',
+      lastName: 'Yellow Green',
+      title: 'Ms',
+      phone: '0477 444 227',
+      email: 'bella69@gmail.com',
+    },
+    {
+      id: 151,
+      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png',
+      firstName: 'Mew',
+      lastName: 'Pink',
+      title: 'Miss',
+      phone: '0412 334 875',
+      email: 'mewmew@gmail.com',
     }
   ];
 
