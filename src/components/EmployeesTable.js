@@ -1,17 +1,18 @@
 import React from "react";
-import { Table } from 'react-bootstrap';
+import { Table, Button } from 'react-bootstrap';
 
 const EmployeesTable = (props) => {
+
   return (
     <Table striped bordered hover>
       <thead>
         <tr>
           <th>Image</th>
           <th>Title</th>
-          <th>First name</th>
-          <th>Last name</th>
-          <th>Email</th>
-          <th>Phone</th>
+          <th><Button onClick={() => props.click('firstName')}>First Name</Button></th>
+          <th><Button onClick={() => props.click('lastName')}>Last Name</Button></th>
+          <th><Button onClick={() => props.click('email')}>Email</Button></th>
+          <th><Button onClick={() => props.click('phone')}>Phone</Button></th>
         </tr>
       </thead>
       <tbody>

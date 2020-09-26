@@ -21,10 +21,14 @@ const App = () => {
     return sortBylastName || sortByfirstName || sortByTitle || sortByPhone || sortByEmail;
   })
 
+  const handleSort = (e) => {
+    console.log(e)
+  }
+
   return (
     <div>
       <Navbar onSearch={handleSearch} search={searchTerm} />
-      <EmployeesTable employees={searchedEmployees} />
+      <EmployeesTable employees={searchedEmployees} click={handleSort}/>
     </div>
   )
 };
