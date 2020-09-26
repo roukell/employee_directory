@@ -1,32 +1,10 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import EmployeesTable from './components/EmployeesTable';
-// import API from './utils/API';
+import employees from './utils/Employees';
 
 
 const App = () => {
-  // employees data
-  const employees = [
-    {
-      id: 1,
-      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
-      firstName: 'Bulbasaur',
-      lastName: 'Lake',
-      title: 'mr',
-      phone: '0400 987 654',
-      email: 'bulb.lake@gmail.com',
-    },
-    {
-      id: 2,
-      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png',
-      firstName: 'Squirtle',
-      lastName: 'Walke',
-      title: 'mr',
-      phone: '0412 345 678',
-      email: 'Squirtle@gmail.com',
-    }
-  ];
-
   const [searchTerm, setSearchTerm] = React.useState('');
 
 
@@ -36,7 +14,12 @@ const App = () => {
   }
 
   const searchedEmployees = employees.filter(result => {
-    return result.lastName.toLowerCase().includes(searchTerm.toLowerCase());
+    const sortBylastName = result.lastName.toLowerCase().includes(searchTerm.toLowerCase());
+    const sortByfirstName = result.firstName.toLowerCase().includes(searchTerm.toLowerCase());
+    const sortByTitle = result.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const sortByPhone = result.phone.toLowerCase().includes(searchTerm.toLowerCase());
+    const sortByEmail = result.email.toLowerCase().includes(searchTerm.toLowerCase());
+    return sortBylastName || sortByfirstName || sortByTitle || sortByPhone || sortByEmail;
   })
 
   return (

@@ -10,7 +10,7 @@ const Navbars = props => {
                 <FormControl
                     name="term"
                     type="text"
-                    placeholder="Search by last name"
+                    placeholder="Search"
                     className=" mr-sm-2"
                     // passing search event to the App component after text is entered
                     value={props.search}

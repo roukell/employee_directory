@@ -8,7 +8,8 @@ const EmployeesTable = (props) => {
         <tr>
           <th>Image</th>
           <th>Title</th>
-          <th>Name</th>
+          <th>First name</th>
+          <th>Last name</th>
           <th>Email</th>
           <th>Phone</th>
         </tr>
@@ -19,7 +20,8 @@ const EmployeesTable = (props) => {
             <tr key={employee.id}>
               <td><img src={employee.picture} alt="employee_picture"></img></td>
               <td>{employee.title}</td>
-              <td>{employee.firstName} {employee.lastName}</td>
+              <td>{employee.firstName}</td>
+              <td>{employee.lastName}</td>
               <td>{employee.email}</td>
               <td>{employee.phone}</td>
             </tr>
