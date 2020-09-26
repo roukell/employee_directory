@@ -1,28 +1,50 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import EmployeesTable from './components/EmployeesTable';
-import API from './utils/API';
+// import API from './utils/API';
 
-class App extends Component {
-  state = {
-    data: []
+
+const App = () => {
+  // employees data
+  const employees = [
+    {
+      id: 1,
+      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
+      firstName: 'Bulbasaur',
+      lastName: 'Lake',
+      title: 'mr',
+      phone: '0400 987 654',
+      email: 'bulb.lake@gmail.com',
+    },
+    {
+      id: 2,
+      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png',
+      firstName: 'Squirtle',
+      lastName: 'Walke',
+      title: 'mr',
+      phone: '0412 345 678',
+      email: 'Squirtle@gmail.com',
+    }
+  ];
+
+  const [searchTerm, setSearchTerm] = React.useState('');
+
+
+  const handleSearch = event => {
+    setSearchTerm(event.target.value);
+    console.log(searchTerm);
   }
 
-  componentDidMount() {
-    API.getUsers().then(data => {
-      console.log(data.data.data)
-      this.setState({ data: data.data.data });
-    });
-  }
+  const searchedEmployees = employees.filter(result => {
+    return result.lastName.toLowerCase().includes(searchTerm.toLowerCase());
+  })
 
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <EmployeesTable employees={this.state.data} />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <Navbar onSearch={handleSearch} search={searchTerm} />
+      <EmployeesTable employees={searchedEmployees} />
+    </div>
+  )
+};
 
 export default App;

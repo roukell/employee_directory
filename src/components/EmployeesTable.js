@@ -1,7 +1,7 @@
 import React from "react";
 import { Table } from 'react-bootstrap';
 
-function EmployeesTable(props) {
+const EmployeesTable = (props) => {
   return (
     <Table striped bordered hover>
       <thead>
@@ -10,6 +10,7 @@ function EmployeesTable(props) {
           <th>Title</th>
           <th>Name</th>
           <th>Email</th>
+          <th>Phone</th>
         </tr>
       </thead>
       <tbody>
@@ -20,6 +21,7 @@ function EmployeesTable(props) {
               <td>{employee.title}</td>
               <td>{employee.firstName} {employee.lastName}</td>
               <td>{employee.email}</td>
+              <td>{employee.phone}</td>
             </tr>
           )
         })}
