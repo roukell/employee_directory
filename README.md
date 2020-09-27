@@ -38,7 +38,7 @@
   ## Contributing
   The app is contributed by Melody Lo.
   <br> 
-  🌟 Thank you to The Official Pokémon Website | Pokemon.com for providing employee details. 🌟
+  🌟 Thank you to The Official Pokémon Website | Pokemon.com for providing Pokémon data. 🌟
 
   ## Questions
   * If you have any questions, feel free to contact me via email: yiling.melody.lo@gmail.com
