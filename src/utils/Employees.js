@@ -1,5 +1,5 @@
 // employees data
-const employees = [
+const Employees = [
     {
       id: 1,
       picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
@@ -83,4 +83,4 @@ const employees = [
     }
   ];
 
-  export default employees;
+  export default Employees;
