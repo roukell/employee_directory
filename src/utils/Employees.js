@@ -10,6 +10,15 @@ const Employees = [
       email: 'bulb.lake@gmail.com',
     },
     {
+      id: 4,
+      picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png',
+      firstName: 'Charmander',
+      lastName: 'Red',
+      title: 'Mrs',
+      phone: '0433 666 888',
+      email: 'charmander@gmail.com',
+    },
+    {
       id: 7,
       picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png',
       firstName: 'Squirtle',
