@@ -28,7 +28,8 @@
 
   To use this app directly, click on the GitHub link under [Description](#Description). 
  1. Search your employee. You can search by id, first name, last name, email, and phone number.
- 2. To sort the employee, click on a property that you want to sort in the table. For example, click 'Last Name' if you want to sort by last name in ascending order. And then search for your employee. Table will only be sorted after entering some input in search. 
+ 2. To sort the employee, click on a property that you want to sort in the table. For example, click 'Last Name' if you want to sort by last name in ascending or descending order.
+ 3. Enjoy the website!
 
 
   ## License
