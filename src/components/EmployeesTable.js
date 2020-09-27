@@ -1,6 +1,7 @@
 import React from "react";
 import { Table, Button } from 'react-bootstrap';
 
+// added useSortableData to set key & direction and return array of objects 
 const useSortableData = (employees, config = null) => {
   const [sortConfig, setSortConfig] = React.useState(config);
 
@@ -35,6 +36,7 @@ const useSortableData = (employees, config = null) => {
   return { employees: sortedItems, requestSort, sortConfig };
 };
 
+// EmployeesTable returns the table
 const EmployeesTable = (props) => {
   const { employees, requestSort, sortConfig } = useSortableData(props.employees);
   const getClassNamesFor = (name) => {
