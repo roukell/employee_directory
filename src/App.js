@@ -4,7 +4,7 @@ import EmployeesTable from './components/EmployeesTable';
 import Employees from './utils/Employees';
 
 const App = () => {
-  const [employees, setEmployees] = React.useState(Employees);
+  const [employees] = React.useState(Employees);
   const [searchTerm, setSearchTerm] = React.useState('');
 
   // receive callback from Navbar and setSearchTerm
