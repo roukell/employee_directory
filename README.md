@@ -5,13 +5,13 @@
   ![img](./public/img/preview.png)
 
   ## Description
-  * Employee Directory assists employers to view their entire employee directory at once and provides quick access to employee information.
+  Employee Directory assists employers to view their entire employee directory at once and provides quick access to employee information.
 
   ## Deployed application
   https://roukell.github.io/employee_directory/
 
   ## Technologies used
-  HTML, CSS, JavaScript, React, Bootstrap, gh-pages
+  HTML, CSS, JavaScript, React, Bootstrap, github-pages
 
   ## User Story
 
