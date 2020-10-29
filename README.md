@@ -10,7 +10,7 @@
   ## Deployed application
   https://roukell.github.io/employee_directory/
 
-  ## Technologies use
+  ## Technologies used
   HTML, CSS, JavaScript, React, Bootstrap, gh-pages
 
   ## User Story
