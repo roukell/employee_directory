@@ -40,7 +40,7 @@
   2. Edit employee details in `./utils/Employees.js`
   3. Use the website locally or deploy it online.
 
-  ☝ To use this app directly, click on the GitHub link under [Description](#Description). 
+  ☝ To use this app directly, click on the link [here](https://roukell.github.io/employee_directory/). 
   1. Search your employee. You can search by id, first name, last name, email, and phone number.
   2. To sort the employee, click on a property that you want to sort in the table. For example, click 'Last Name' if you want to sort by last name in ascending or descending order.
   3. Enjoy the website! 🌸
