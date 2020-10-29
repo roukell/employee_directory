@@ -7,7 +7,7 @@
   ## Description
   * Employee Directory assists employers to view their entire employee directory at once and provides quick access to employee information.
 
-  * Technologies used: HTML, CSS, Javascript, Node.js, Express, MongoDB, Mongoose, React, Heroku, Bootstrap, gh-pages
+  * Technologies used: HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, React, Heroku, Bootstrap, gh-pages
 
   * Deployed application on Github: https://roukell.github.io/employee_directory/
 
