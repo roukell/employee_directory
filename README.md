@@ -11,7 +11,7 @@
   https://roukell.github.io/employee_directory/
 
   ## Technologies use
-  HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, React, Heroku, Bootstrap, gh-pages
+  HTML, CSS, JavaScript, React, Bootstrap, gh-pages
 
   ## User Story
 
